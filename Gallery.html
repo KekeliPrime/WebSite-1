@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        /* General styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Navigation bar styling */
+        nav {
+            background-color: #4b4a4a;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        nav a.active {
+            background-color: #04AA6D;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                float: none;
+                text-align: left;
+            }
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(to right, #4b4a4a, #04AA6D);
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Gallery section */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery h3 {
+            grid-column: 1 / -1; /* Center the heading across all columns */
+            text-align: center;
+            color: #4b4a4a;
+            margin: 0 0 15px;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4b4a4a;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Project.html">Project</a>
+        <a href="Gallery.html" class="active">Gallery</a>
+        <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-basic-css-by-building-a-cafe-menu/step-3" target="_blank">FreeCodeCamp</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Gallery</h1>
+        <p>Explore highlights of my journey in web design and creativity</p>
+    </header>
+
+    <!-- Gallery Section -->
+    <div class="gallery">
+        <h3>Featured Works</h3>
+        <img src="images/e commence.jpg" alt="Image 1 description">
+        <img src="images/first website(1).jpg" alt="Image 2 description">
+        <img src="images/lastone (1).jpg" alt="Image 3 description">
+        <img src="images/istockphoto4.jpg" alt="Image 4 description">
+        <img src="images/istockphoto5.jpg" alt="Image 5 description">
+        <img src="images/istockphoto3.jpg" alt="Image 6 description">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Kelvin Agbola Kekeli | Powered by FreeCodeCamp
+    </footer>
+</body>
+</html>
